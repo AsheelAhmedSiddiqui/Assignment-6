@@ -5,7 +5,7 @@
   </head>
   <body>
     <center>
-        <br><br><br>
+      <br /><br /><br />
       <form action="./submit.html">
         <table border="1" cellspacing="5px" cellpadding="5px">
           <tr>
@@ -13,15 +13,23 @@
           </tr>
           <tr>
             <td>Name</td>
-            <td><input type="text" /></td>
+            <td><input type="text" required /></td>
           </tr>
           <tr>
             <td>Pizza Topping</td>
             <td>
-              <input type="radio" name="toppings" /><label>Supreme</label><br />
-              <input type="radio" name="toppings" /><label>Vegetarian</label
+              <input type="radio" name="toppings" id="supreme" /><label
+                for="supreme"
+                >Supreme</label
               ><br />
-              <input type="radio" name="toppings" /><label>Hawaiian</label>
+              <input type="radio" name="toppings" id="vegetarian" /><label
+                for="vegetarian"
+                >Vegetarian</label
+              ><br />
+              <input type="radio" name="toppings" id="hawaiian" /><label
+                for="hawaiian"
+                >Hawaiian</label
+              >
             </td>
           </tr>
           <tr>
@@ -46,7 +54,7 @@
             <td colspan="2">
               <label>Delivery Instructions: </label>
               <br />
-              <textarea cols="50" rows="5"></textarea>
+              <textarea cols="50" rows="5" required></textarea>
             </td>
           </tr>
           <tr>
